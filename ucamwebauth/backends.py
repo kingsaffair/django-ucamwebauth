@@ -35,7 +35,7 @@ class RavenAuthBackend(RemoteUserBackend):
                                                           "access this site"))
             raise UserNotAuthorised("Authentication successful but you are not authorised to access this site")
 
-        return super(RavenAuthBackend, self).authenticate(response.principal)
+        return super(RavenAuthBackend, self).authenticate(response_req, response.principal)
 
     # Backwards compatibility: honour UCAMWEBAUTH_CREATE_USER.
     @property
