@@ -1,6 +1,37 @@
 django-ucamwebauth changelog
 =============================
 
+1.4.4 - 02/08/2017
+------------------
+
+- Added string representation to UserProfile.
+
+
+1.4.3 - 14/07/2017
+------------------
+
+- New UserProfile model to enrich the User model. The only field raven_for_life indicates whether or not the user has left the university.
+
+
+1.4.2 - 04/07/2017
+------------------
+
+- Modify authenticate signature to make UCamWebAuth compatible with other authentication backends.
+
+
+1.4.1 - 03/07/2017
+------------------
+
+- Raise TypeError if the request is not in the proper format for UcamWebAuth, so that django tries other authentication backends
+
+
+1.4 - 03/07/2017
+------------------
+
+- Dropped support for old versions of Python and Django and added support for new versions of them.
+- Officially supported: django 1.8, 1.10, and 1.11. Python 2.7, 3.4, 3.5
+
+
 1.3 - 10/03/2015
 ------------------
 
